@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <title>Твоё тело</title>
 </head>
 
@@ -17,9 +19,9 @@
                 <div class="container">
                     <nav class="menu aos aos--third " data-aos="fade-right" data-aos-once="true">
                         <ul class="menu__items">
-                            <li class="menu__item">Про бонусы</li>
-                            <li class="menu__item">Программа марафона</li>
-                            <li class="menu__item">Отзывы</li>
+                            <a href="#sec-third" class="menu__item">Про бонусы</a>
+                            <a href="#sec-fourth" class="menu__item">Программа марафона</a>
+                            <a href="#sec-sixth" class="menu__item">Автор</a>
                         </ul>
                     </nav>
                     <button class="sign-up aos aos--first " data-aos="fade-left" data-aos-once="true">    
@@ -35,11 +37,11 @@
                         </div>
                         <div class="main__face-text aos aos--first" data-aos="fade-left" data-aos-once="true">
                             <h1 class="main__face-title ">
-                                Обновленный марафон <br> по телесно-ориентированной <br> терапии <span class="lightgreen ">«Твое тело»</span><br> от Евгении Островской
+                                Обновленный марафон <br> по телесно-ориентированной <br> терапии <b class="lightgreen ">«Твое тело»</b><br> от Евгении Островской
                             </h1>
                             <p class="main__face-subtitle ">
                                 В вашей жизни появятся <br>
-                                <span class="lightgreen ">любовь, деньги, успех</span>
+                                <b class="lightgreen ">любовь, деньги, успех</b>
                             </p>
                             <span class="main__face-start ">
                                 Старт марафона — 15 июля
@@ -48,6 +50,10 @@
                                 Хочу в список предзаписи
                             </button>
                         </div>
+                    </div>
+                    <div class="main__face-bg _ibg">
+                        <img src="./img/hands.jpg" alt="cover">
+                        <div class="dark"> </div>
                     </div>
                 </div>
                 <section class="sec-first aos aos--second" data-aos="fade-up" data-aos-once="true">
@@ -94,15 +100,15 @@
                                         новых раздаточных материалов
                                     </p>
                                 </div>
-                                <div class="sec-first-row-item ">
+                                <div class="sec-first-row-item " style="border-radius: 0px 0px 40px 0px;">
                                     <p class="sec-first-row-item-text " style="padding-left: 15px; ">
                                         3 секретных модуля
                                     </p>
                                 </div>
                             </div>
-                            <div class="sec-first-bottom aos aos--second" data-aos="fade-up" data-aos-once="true">
-                                И это для того, чтобы в вашей жизни появилось все: любовь, деньги, успех. И главное — умение слышать и выбирать себя
-                            </div>
+                        </div>
+                        <div class="sec-first-bottom aos aos--second" data-aos="fade-up" data-aos-once="true">
+                            И это для того, чтобы в вашей жизни появилось все: любовь, деньги, успех. И главное — умение слышать и выбирать себя
                         </div>
                     </div>
                 </section>
@@ -117,7 +123,7 @@
 
                     </div>
                 </section>
-                <section class="sec-third ">
+                <section id="sec-third" class="sec-third ">
                     <div class="container ">
                         <div class="sec-third-left aos aos--first " data-aos="fade-right" data-aos-once="true">
                             <h1 class="main__face-title ">
@@ -137,8 +143,11 @@
                             <img src="./img/hands2.jpg " alt="2 ">
                         </div>
                     </div>
+                    <div class="sec-third-bg">
+                        <img src="./img/hands2.jpg " alt="2 ">
+                    </div>
                 </section>
-                <section class="sec-fourth ">
+                <section id="sec-fourth" class="sec-fourth ">
                     <div class="container ">
                         <div class="sec-fourth-title aos aos--first" data-aos="fade-right" data-aos-once="true">
                             Марафон «Твое тело» — это
@@ -207,6 +216,28 @@
                             <div class="sec-fifth-programm aos aos--first " data-aos="fade-right" data-aos-once="true" data-aos-duration="2300">Соединение: душа, тело, разум</div>
                             <div class="sec-fifth-programm aos aos--first " data-aos="fade-right" data-aos-once="true" data-aos-duration="2400">Финал марафона</div>
                         </div>
+                        <div class="carousel">
+                            <button class="arrow__left slick-prev">
+                                <img src="./img/arrow1.png" alt="">
+                            </button>
+                            <div id="slick" role="listbox">
+                                <div class="carousel__item slide" role="option">Телесность — о чем это?</div>
+                                <div class="carousel__item slide" role="option">Заземление</div>
+                                <div class="carousel__item slide" role="option">Вход в тело</div>
+                                <div class="carousel__item slide" role="option">Первый блок — глазной</div>
+                                <div class="carousel__item slide" role="option">Второй блок — челюстно-горловой</div>
+                                <div class="carousel__item slide" role="option">Третий блок — шейный</div>
+                                <div class="carousel__item slide" role="option">Четвертый блок — грудной</div>
+                                <div class="carousel__item slide" role="option">Пятый блок — диафрагмальный</div>
+                                <div class="carousel__item slide" role="option">Шестой блок — брюшной</div>
+                                <div class="carousel__item slide" role="option">Седьмой блок — тазовый</div>
+                                <div class="carousel__item slide" role="option">Соединение: душа, тело, разум</div>
+                                <div class="carousel__item slide" role="option">Финал марафона</div>
+                            </div>
+                            <button class="arrow__left slick-next">
+                                <img src="./img/arrow2.png" alt="">
+                            </button>
+                        </div>
                         <div class="module-3 ">
                             <div class="module-3-left aos aos--first " data-aos="fade-right" data-aos-once="true">
                                 <div class="module-3-title ">
@@ -237,7 +268,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="sec-sixth">
+                <section id="sec-sixth" class="sec-sixth">
                     <div class="container">
                         <div class="sec-sixth-title aos aos--first " data-aos="fade-down" data-aos-once="true">
                             Евгения Островская — автор марафона
@@ -319,6 +350,9 @@
                             <hr class="regist__hr">
                         </div>
                     </div>
+                    <div class="reg-bg">
+
+                    </div>
                 </section>
             </main>
             <footer class="footer">
@@ -342,16 +376,16 @@
                                 Соц. сети:
                             </div>
                             <div class="footer__right-media-icons">
-                                <a href="" class="footer__right-media-icon">
+                                <a href="#" class="footer__right-media-icon">
                                     <img src="./img/inst.png" alt="6">
                                 </a>
-                                <a href="" class="footer__right-media-icon">
+                                <a href="#" class="footer__right-media-icon">
                                     <img src="./img/facebook.png" alt="">
                                 </a>
-                                <a href="" class="footer__right-media-icon">
+                                <a href="#" class="footer__right-media-icon">
                                     <img src="./img/youtube.png" alt="">
                                 </a>
-                                <a href="" class="footer__right-media-icon">
+                                <a href="#" class="footer__right-media-icon">
                                     <img src="./img/twit.png" alt="">
                                 </a>
                             </div>
@@ -367,6 +401,21 @@
             duration: 1200
         });
     </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.slick').slick({
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: document.querySelector(".slick-prev"),
+                nextArrow: document.querySelector(".slick-next"),
+            });
+        });
+    </script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
